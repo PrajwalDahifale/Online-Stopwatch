@@ -1,0 +1,104 @@
+/* stopwatchstyles.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1f2937; /* Dark Gray */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #e5e7eb; /* Light Gray */
+  }
+  
+  .stopwatch {
+    text-align: center;
+    background: #374151; /* Dark Slate Gray */
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #60a5fa; /* Light Blue */
+  }
+  
+  #timer {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .buttons button {
+    flex: 1;
+    margin: 5px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s ease;
+  }
+  
+  #start {
+    background-color: #22c55e; /* Green */
+    color: #ffffff;
+  }
+  
+  #pause {
+    background-color: #f59e0b; /* Yellow */
+    color: #ffffff;
+  }
+  
+  #reset {
+    background-color: #3b82f6; /* Blue */
+    color: #ffffff;
+  }
+  
+  #lap {
+    background-color: #9333ea; /* Purple */
+    color: #ffffff;
+  }
+  
+  .buttons button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  .buttons button:active {
+    transform: scale(1);
+  }
+  
+  #laps {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  #laps h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  #lap-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  #lap-list li {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #d1d5db; /* Light Slate */
+  }
+  
